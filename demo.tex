@@ -24,22 +24,65 @@
 
 \maketitle
 
-\begin{frame}{Table of contents}
-  \setbeamertemplate{section in toc}[sections numbered]
-  \tableofcontents[hideallsubsections]
+\begin{frame}{Why System Control Dynamics?}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.2]{loop.jpg}
+    \caption{Closed loop robotic system }
+    \label{fig:my_label1}
+\end{figure}
+    
 \end{frame}
 
-\section{Introduction}
-
-\begin{frame}[fragile]{Why System Control Dynamics?}
-  \begin{itemize}[<+- | alert@+>]
+\begin{frame}[fragile]{Pre-requisites and Requirements}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      Fields
+  	\begin{itemize}[<+- | alert@+>]
     % \item \alert<4>{This is\only<4>{ really} important}
     \item Aeronautics.
     \item Automatic control Systems.
     \item Economics, finance.
     \item Circuit analysis, simulations.
     \item Mechanical and civil engineering.
-  \end{itemize}
+  	\end{itemize}
+
+    \column{0.5\textwidth}
+	\includegraphics[scale=0.4]{aeronautics.jpg}}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Linear Systems}
+
+    \begin{alertblock}{Statement}
+        If you do not understand linear dynamical systems, you certainly cannot understand Non linear systems.
+    \end{alertblock}
+    \begin{block}{Advantages}
+    \begin{itemize}
+        \item Methods for linear systems often work --- unreasonably well --- in practice
+        \item Most techniques for non linear systems are based linear methods.
+    \end{itemize}
+    \end{block}
+    
+\end{frame}
+
+\begin{frame}{Example}
+\begin{columns}[T,onlytextwidth]
+\column{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.2]{controlSuspension.png}
+    \caption{Car Suspension System Control}
+    \label{fig:my_label2}
+\end{figure}
+\column{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[scale=2.0]{suspension.jpg}
+    \caption{Model Simplified}
+    \label{fig:my_label3}
+\end{figure}
+\end{columns}
 \end{frame}
 
 \begin{frame}[fragile]{Pre-requisites and Requirements}
@@ -70,32 +113,6 @@
     \caption{Course requirements.}
     \end{table}
 
-\end{frame}
-
-\begin{frame}[fragile]{Pre-requisites and Requirements}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.5\textwidth}
-      Fields
-  	\begin{itemize}[<+- | alert@+>]
-    % \item \alert<4>{This is\only<4>{ really} important}
-    \item Aeronautics.
-    \item Automatic control Systems.
-    \item Economics, finance.
-    \item Circuit analysis, simulations.
-    \item Mechanical and civil engineering.
-  	\end{itemize}
-
-    \column{0.5\textwidth}
-	\includegraphics[scale=0.4]{aeronautics.jpg}}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Linear Systems}
-
-\begin{alertblock}
-    If you do not understand linear dynamical systems, yuo certainly cannot understand Non linear systems
-\end{alertblock}
-    
 \end{frame}
 
 \end{document}
